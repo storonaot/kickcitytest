@@ -1,9 +1,5 @@
-for start project on localhost:
+for start project on localhost:8080
+
+$ yarn
 
 $ yarn run dev
-
-for build project && deploy:
-
-$ yarn run build
-
-$ yarn run build deploy
