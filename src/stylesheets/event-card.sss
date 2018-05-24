@@ -1,0 +1,119 @@
+@import '../stylesheets/mixins.sss'
+
+.event-card
+  width: 100%
+  height: 267px
+  padding: 25px
+  color: #fff
+  font-size: .8em
+  font-weight: 400
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: relative
+  cursor: pointer
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    background-color: transparent
+    transition: background-color .5s
+  &:hover::before
+    background-color: #25262933
+  &:hover
+    .event-card__title,
+    .event-card__labels,
+    .event-card__favorite
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)
+  &--1
+    @mixin bg-image '../images/events/1.jpg'
+    background-size: cover
+  &--2
+    @mixin bg-image '../images/events/2.jpg'
+    background-size: cover
+  &--3
+    @mixin bg-image '../images/events/3.jpg'
+    background-size: cover
+  &--4
+    @mixin bg-image '../images/events/4.jpg'
+    background-size: cover
+  &--5
+    @mixin bg-image '../images/events/5.jpg'
+    background-size: cover
+  &--6
+    @mixin bg-image '../images/events/6.jpg'
+    background-size: cover
+  &__top
+    display: flex
+    justify-content: space-between
+  &__title
+    font-size: 1.2em
+    font-weight: 700
+    transform: translateY(20px)
+    transition: all .3s
+  &__tags
+    display: flex
+    justify-content: space-between
+  &__tag
+    & + &
+      margin-left: 15px
+    &--token
+      @mixin aspect-ratio 20px, 100%
+      @mixin bg-image '../images/token.png'
+    &--free
+      background-color: green
+      color: #f3fbfe
+      font-size: .8em
+      font-weight: 400
+      line-height: 19px
+      background-color: #43e690
+      size: auto 19px
+      padding: 0 13px
+      border-radius: 10px
+      text-transform: uppercase
+    &--favorite
+  &__labels
+    margin-top: 10px
+    font-size: .9em
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    align-content: center
+    flex-flow: row wrap
+    opacity: 0
+    visibility: hidden
+    transform: translateY(20px)
+    transition: all .3s
+  &__label
+    & + &
+      margin-left: 15px
+  &__favorite
+    @mixin aspect-ratio 16px, 14px
+    @mixin bg-image ''
+    background-image: svg('heart', '[fill]: $blueGray')
+    opacity: 0
+    visibility: hidden
+    transform: translateY(20px)
+    transition: all .3s
+    &:hover
+      background-image: svg('heart', '[fill]: #ff4a7d')
+    &:focus
+      animation: like .2s ease-in-out
+    &--selected
+      background-image: svg('heart', '[fill]: #ff4a7d')
+  &__title-wrapper
+    display: flex
+    justify-content: space-between
+
+
+@keyframes like
+  from 
+    transform: scale(1)
+  to
+    transform: scale(.8)

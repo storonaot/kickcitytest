@@ -1,0 +1,19 @@
+@define-mixin aspect-ratio $width, $height
+  width: $width
+  position: relative
+  &::before
+    content: ''
+    padding-bottom: $height
+    display: block
+
+@define-mixin bg-image $url
+  background-image: url($url)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+
+@define-mixin nav-item
+  color: #3a3f49
+  font-size: .8em
+  font-weight: 400
+  cursor: pointer

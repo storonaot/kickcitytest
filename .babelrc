@@ -1,0 +1,5 @@
+{
+  "presets": ["env", "react", "stage-2"],
+  "plugins": ["syntax-dynamic-import", "transform-regenerator", "transform-class-properties"],
+  "retainLines": true
+}

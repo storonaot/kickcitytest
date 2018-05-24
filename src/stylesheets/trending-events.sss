@@ -1,0 +1,19 @@
+@import '../stylesheets/mixins.sss' 
+
+.trending-events
+  &__top
+    margin-bottom: 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__more-link
+    color: #8b98ac
+    font-size: .8em
+    font-weight: 400
+    display: flex
+  &__arrow
+    @mixin aspect-ratio 22px, 31%
+    @mixin bg-image '../images/arrow.svg'
+    transform: rotate(90deg)
+    margin-left: 10px
+    

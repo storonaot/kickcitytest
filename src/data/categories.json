@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "concerts" },
+  { "id": 2, "name": "art" },
+  { "id": 3, "name": "festivals" },
+  { "id": 4, "name": "theatre" },
+  { "id": 5, "name": "nightlife" },
+  { "id": 6, "name": "busuness" },
+  { "id": 7, "name": "party" },
+  { "id": 8, "name": "games" },
+  { "id": 9, "name": "education" },
+  { "id": 10, "name": "fashin" },
+  { "id": 11, "name": "sport" },
+  { "id": 12, "name": "meetups" }
+]

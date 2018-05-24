@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "date": "Feb, 15",
+    "free": false,
+    "title": "New Politics @ House of Blues",
+    "kcy": false,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/1.jpg",
+    "size": "narrow"
+  },
+  {
+    "id": 2,
+    "date": "Feb, 13",
+    "free": true,
+    "title": "Grand Budapest Hotel",
+    "kcy": true,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/2.jpg",
+    "size": "narrow"
+  },
+  {
+    "id": 3,
+    "date": "Apr, 24",
+    "free": false,
+    "title": "Romeo and Juliet",
+    "kcy": false,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/3.jpg",
+    "size": "wide"
+  },
+  {
+    "id": 4,
+    "date": "Mar, 21",
+    "free": false,
+    "title": "A$AP ROCKY",
+    "kcy": false,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/4.jpg",
+    "size": "narrow"
+  },
+  {
+    "id": 5,
+    "date": "Apr, 07",
+    "free": false,
+    "title": "Dieter Rams: Less is Better",
+    "kcy": true,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/5.jpg",
+    "size": "wide"
+  },
+  {
+    "id": 6,
+    "date": "Mar, 13—25",
+    "free": false,
+    "title": "Carel Fabritius",
+    "kcy": false,
+    "labels": ["Party", "Concert"],
+    "cover": "images/events/6.jpg",
+    "size": "narrow"
+  }
+]

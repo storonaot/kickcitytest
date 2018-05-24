@@ -1,0 +1,28 @@
+.events
+  &__list
+    display: flex
+    flex-wrap: wrap
+  &__item
+    margin-right: 15px
+    margin-bottom: 15px
+    border-radius: 15px
+    overflow: hidden
+    transition: box-shadow .5s
+    &:nth-child(3n)
+      margin-right: 0
+    &:hover
+      box-shadow: -5px 5px 50px 2px #aabece
+    &--narrow
+      width: calc(25% - 15px)
+      min-width: calc(25% - 15px)
+      &:nth-child(3n)
+        width: 25%
+        min-width: 25%
+    &--wide
+      width: calc(50% - 15px)
+      min-width: calc(50% - 15px)
+      &:nth-child(3n)
+        width: 50%
+        min-width: 50%
+
+

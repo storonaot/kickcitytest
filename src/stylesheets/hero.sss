@@ -1,0 +1,32 @@
+.hero
+  background-image: url('../images/hero-background.png')
+  background-repeat: no-repeat
+  background-position: right -6vh
+  width: 100%
+  height: calc(100vh - 78px - 230px)
+  background-size: 65vh auto
+  &__wrapper
+    display: flex
+    align-items: center
+    height: 100%
+  &__content
+    max-width: 305px
+  &__description
+    color: $gray
+    font-size: .8em
+    font-weight: 400
+    margin-bottom: 40px
+  &__button
+    height: 50px
+    line-height: 50px
+    background-color: $primary
+    color: #fff
+    display: inline-block
+    padding: 0 25px
+    border-radius: 30px
+    font-size: .8em
+    font-weight: 400
+    letter-spacing: .42px
+    transition: background-color .3s
+    &:hover
+      background-color: #3883b3

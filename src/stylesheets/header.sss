@@ -1,0 +1,40 @@
+@import '../stylesheets/mixins.sss' 
+
+.header
+  height: $headerHeight
+  position: fixed
+  width: 100%
+  top: 0
+  box-shadow: 0 0 9px rgba(207, 222, 234, 0.45)
+  background-color: #fcfefe
+  &__wrapper
+    display: flex
+    size: 100%
+    justify-content: stretch
+  &__logo
+    @mixin aspect-ratio 121px, 25%
+    @mixin bg-image '../images/logo.svg'
+    display: block
+    position: relative
+    height: 100%
+  &__logo-img
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+  &__block
+    border-right: 1px solid #f1f6f9
+    height: 100%
+    &:last-child
+      border: none
+    &--nav
+      flex-grow: 2
+      padding-left: 50px
+    &--logo
+      padding-right: 40px
+    &--personal
+      padding-left: 20px
+      flex-basis: 152px
+    &--event
+      min-width: 134px
+      

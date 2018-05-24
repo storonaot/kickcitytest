@@ -1,0 +1,27 @@
+$horizontalOffset: 30px
+
+.dropdown-menu
+  position: absolute
+  top: calc(100% + 2px)
+  padding: 20px 0 20px
+  box-shadow: 0 0 9px rgba(207, 222, 234, 0.45)
+  background-color: #fcfefe
+  &--right
+    right: 0
+  &--left
+    left: 0
+  &__list
+    padding: 0 $horizontalOffset
+  &__item
+    margin-left: -$horizontalOffset
+    margin-right: -$horizontalOffset
+  &__link
+    display: block
+    padding: 5px $horizontalOffset
+    white-space: nowrap
+    color: #8b98ac
+    transition: color .5s
+    font-size: .8em
+    cursor: pointer
+    &:hover
+      color: $dark
